@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "clean": "rm -rf src/generated && npm run generate:content",
     "build": "astro build",
     "preview": "astro preview",
     "generate:content": "tsx generateContent.ts",
