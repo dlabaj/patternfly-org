@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "generate:content": "ts-node generateContent.ts",
+    "generate:content": "tsx generateContent.ts",
     "astro": "astro",
     "start": "patternfly-doc-core start",
     "build:docs": "patternfly-doc-core build",
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@patternfly/patternfly-doc-core": "^1.7.0",
-    "ts-node": "^10.9.2"
+    "tsx": "^4.19.0"
   }
 }

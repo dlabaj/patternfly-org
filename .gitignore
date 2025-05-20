@@ -26,6 +26,7 @@ public
 static
 .cache
 /build
+packages/site/src/generated
 
 # IDE - VSCode
 .vscode
