@@ -17,7 +17,7 @@ export const config = {
     // },
   ],
   navSectionOrder: [],
-  outputDir: './dist/docs',
+  outputDir: './dist',
   propsGlobs: [
     // {
     //   include: ['*/@patternfly/react-core/src/**/*.tsx'],

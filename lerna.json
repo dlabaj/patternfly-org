@@ -11,7 +11,6 @@
     }
   },
   "packages": [
-    "packages/ast-helpers",
     "packages/documentation-framework",
     "packages/documentation-site"
   ],

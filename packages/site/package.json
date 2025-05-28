@@ -3,14 +3,11 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "clean": "rm -rf src/generated && npm run generate:content",
-    "build": "astro build",
-    "preview": "astro preview",
+    "clean": "rm -rf src/generated",
+    "prebuild": "npm run generate:content",
     "generate:content": "tsx generateContent.ts",
-    "astro": "astro",
-    "start": "patternfly-doc-core start",
-    "build:docs": "patternfly-doc-core build",
+    "dev": "patternfly-doc-core start",
+    "build": "patternfly-doc-core build",
     "serve": "patternfly-doc-core serve",
     "sync": "patternfly-doc-core sync",
     "init:docs": "patternfly-doc-core init"
