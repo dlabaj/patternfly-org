@@ -1,0 +1,44 @@
+---
+id: Chip
+section: components
+cssPrefix: ['pf-v6-c-chip', 'pf-v6-c-chip-group']
+propComponents: ['Chip', 'ChipGroup']
+ouia: true
+deprecated: true
+---
+
+import { Fragment, useState } from 'react';
+
+## Examples
+
+### Chip variants
+
+Chips can be removable or read-only. The Overflow chip is a special chip that is used to expand or collapse the content of a chip group.
+
+
+import ChipDefault from "./ChipDefault.tsx?raw"
+
+<LiveExample src={ChipDefault} />
+
+### Chip groups
+
+A chip group is a collection of chips that can be grouped by category and used to represent one or more values assigned to a single attribute. When the value of `numChips` is exceeded, additional chips will be hidden using an overflow chip.
+
+
+import ChipGroupInline from "./ChipGroupInline.tsx?raw"
+
+<LiveExample src={ChipGroupInline} />
+
+### Chip groups with categories
+
+
+import ChipGroupWithCategories from "./ChipGroupWithCategories.tsx?raw"
+
+<LiveExample src={ChipGroupWithCategories} />
+
+### Chip groups with removable categories
+
+
+import ChipGroupRemovableCategories from "./ChipGroupRemovableCategories.tsx?raw"
+
+<LiveExample src={ChipGroupRemovableCategories} />
