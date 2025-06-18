@@ -19,14 +19,14 @@ export const config = {
   navSectionOrder: [],
   outputDir: './dist',
   propsGlobs: [
-    // {
-    //   include: ['*/@patternfly/react-core/src/**/*.tsx'],
-    //   exclude: [
-    //     '/**/examples/**',
-    //     '/**/__mocks__/**',
-    //     '/**/__tests__/**',
-    //     '/**/*.test.tsx',
-    //   ],
-    // },
+    {
+      include: ['./src/**/*.tsx'],
+      exclude: [
+        '/**/examples/**',
+        '/**/__mocks__/**',
+        '/**/__tests__/**',
+        '/**/*.test.tsx',
+      ],
+    },
   ],
 }

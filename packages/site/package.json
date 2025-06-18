@@ -5,16 +5,18 @@
   "scripts": {
     "clean": "rm -rf src/generated",
     "generate:content": "patternfly-doc-core convert-to-mdx ../documentation-site/patternfly-docs/content/",
+    "generate:props": "patternfly-doc-core generate-props",
     "dev": "patternfly-doc-core start",
     "build": "patternfly-doc-core build",
     "preview": "npx wrangler pages dev ./dist",
     "serve": "patternfly-doc-core serve",
     "sync": "patternfly-doc-core sync",
     "deploy": "npx wrangler pages deploy ./dist",
-    "init:docs": "patternfly-doc-core init"
+    "init:docs": "patternfly-doc-core init",
+    "convert:examples": "patternfly-doc-core convert-to-mdx './src/content/**/*.md'"
   },
   "dependencies": {
-    "@patternfly/patternfly-doc-core": "file:.yalc/@patternfly/patternfly-doc-core",
+    "@patternfly/patternfly-doc-core": "latest",
     "@patternfly/react-icons": "^6.2.2",
     "astro": "^5.7.13",
     "wrangler": "^4.20.0"
